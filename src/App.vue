@@ -1,7 +1,7 @@
 <template>
   <div class="container column">
     <resume-form></resume-form>
-    <resume-view></resume-view>
+    <resume-view :blocks="blocks"></resume-view>
   </div>
   <div class="container">
     <resume-loader></resume-loader>
@@ -17,8 +17,7 @@ import ResumeView from './components/ResumeView.vue'
 export default {
   data() {
     return {
-
-    }
+      blocks: [],
   },
   components: {
     ResumeForm,
